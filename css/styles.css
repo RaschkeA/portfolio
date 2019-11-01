@@ -48,7 +48,9 @@ body {
 .navbar a:active {
     background-color: #4CAF50;
 }
-
+.diceProject a {
+   transform: scale(10);
+}
 #bannerimg {
     width: 100%;
     height: auto;
