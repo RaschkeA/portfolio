@@ -48,8 +48,8 @@ body {
 .navbar a:active {
     background-color: #4CAF50;
 }
-.diceProject a {
-   transform: scale(10);
+.diceProject script {
+   transform: scale(.5);
 }
 #bannerimg {
     width: 100%;
