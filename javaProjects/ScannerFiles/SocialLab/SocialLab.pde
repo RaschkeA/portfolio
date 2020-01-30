@@ -11,7 +11,6 @@ void setup(){
      Social s = new Social(soc);
      println(s);
    }
-   scan.nextLine();
  }
  catch(Exception e){
    println(e);

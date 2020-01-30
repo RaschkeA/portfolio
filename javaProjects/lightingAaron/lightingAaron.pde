@@ -1,7 +1,6 @@
 Bolt run = new Bolt();
 Fire [] ea=new Fire[10];
-Fire go = new Fire();
-PImage img;
+//Fire go = new Fire();
 int startX = 400;
 int startY = 0;
 int endX = 0;
@@ -14,7 +13,6 @@ void setup() {
   }
   size(800, 400);
   background(0);
-  img = loadImage("flame.png");
   strokeWeight(5);
 }
 
@@ -39,7 +37,6 @@ void draw() {
   }
   run.tree();
     if (burn==true){
-      image(img, 100, 100);
     fill(255, 153, 0);
   for (int i = 0; i<ea.length; i++) {
     ea[i].showFire();

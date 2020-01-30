@@ -1,10 +1,5 @@
 import java.util.Scanner;
-try{
-  Scanner green = new Scanner(new File("/Users/aaronraschke/Desktop/AaronLabs/WordCLoud/WordCloud/Green.txt"));
-}
-catch(Exception e){
-  
-}
+
 String one="Hello, I am nine syllables long. And it is great!";
 StringParser run = new StringParser(one);
 String wordList[] = one.split("[ ,.!?]");
@@ -102,8 +97,8 @@ public class StringParser {
 public class Cloud {
   color c =color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
   int textSize = ((int)(Math.random()*40+20));
-  int x = (int)(Math.random()*width);
-  int y = (int)(Math.random()*height);
+  int x = (int)(Math.random()*width+75);
+  int y = (int)(Math.random()*height-100)+100;
   public Cloud(String one) {
   }
   void show(String str) {
@@ -115,7 +110,7 @@ public class Cloud {
    x-=3;
    if(x<-100){
     x=width+20; 
-    y = (int)(Math.random()*height);
+    y = (int)(Math.random()*height-100)+100;
     textSize = ((int)(Math.random()*40+20));
    }
   }

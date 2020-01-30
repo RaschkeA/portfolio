@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-    if (mouse == false && (millis() - next > 0)) {
+    if (mouse === false && (millis() - next > 0)) {
         next += intrvl;
         run.dice();
     }
@@ -20,7 +20,7 @@ function draw() {
 }
 
 function mousePressed() {
-    if (mouse == true) {
+    if (mouse === true) {
         run.dice();
         run.showText();
     }
