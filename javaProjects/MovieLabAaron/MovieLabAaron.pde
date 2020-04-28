@@ -46,6 +46,7 @@ void draw() {
   fill(0);
   text("Word: " + in, 275, 40);
   if (showScore==true) {
+    fill(255);
     text("Average Score is: " + av, 300, 70);
     text("Total: " + sum, 300, 80);
   }
